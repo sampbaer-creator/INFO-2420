@@ -11,22 +11,57 @@
     src: url('fonts/Docktrin.ttf') format('truetype');
 }
 
-/* Apply Docktrin to headings */
+/* Body default */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F4EF; /* light background */
+    color: #2A2A2A; /* default text */
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
 h1 {
     font-family: 'Docktrin', Arial, sans-serif;
     font-size: 48px;
-    color: darkblue;
+    color: #374B79; /* dark blue */
 }
 
 h2 {
     font-family: 'Docktrin', Arial, sans-serif;
     font-size: 32px;
-    color: darkred;
+    color: #307C5B; /* green accent */
 }
 
-/* Optional: Keep paragraph text clean */
-p, a {
-    font-family: Arial, sans-serif;
+/* Links */
+a:link, a:visited {
+    color: #374B79; /* medium blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #86A941; /* light green accent */
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 10px 15px;
+}
+
+/* Horizontal rules */
+hr {
+    border: 2px solid #307C5B; /* green accent */
+}
+
+/* Optional: Paragraph text */
+p {
+    font-size: 1em;
 }
 </style>
 
@@ -44,6 +79,12 @@ p, a {
     <td><a href="Projects/Project2/AboutUs.html">Project 2 - About Us: Extreme Honeymoons</a></td>
     <td>|</td>
     <td><a href="Projects/Project2/Tributes.html">Project 2 - Tributes: Extreme Honeymoons</a></td>
+    <td>|</td>
+    <td><a href="Projects/Project3/AboutUs.html">Project 3 - About Us: Extreme Honeymoons</a></td>
+    <td>|</td>
+    <td><a href="Projects/Project3/Tributes.html">Project 3 - Tributes: Extreme Honeymoons</a></td>
+    <td>|</td>
+    <td><a href="Projects/Project3/SiteDesign.html">Project 3 - SiteDesign</a></td>
 </tr>
 </table>
 <hr />
@@ -80,6 +121,7 @@ p, a {
 
 </body>
 </html>
+
 
 
 

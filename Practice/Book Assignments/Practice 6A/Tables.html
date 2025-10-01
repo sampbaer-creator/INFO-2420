@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Exercises 8-1 to 8-3</title>
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+        background-color: #f7f7f7;
+        color: #000; /* default text color black */
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 2px; /* small spacing between cells */
+        margin-bottom: 50px;
+        width: 600px;
+        text-align: center;
+    }
+
+    th, td {
+        border: 1px solid black; /* thin black border around each cell */
+        padding: 10px 15px;
+        color: #000; /* text black for all cells */
+    }
+
+    /* Rounded bubble only for exercise label */
+    .exercise-label {
+        background-color: #BBCD67; /* light green */
+        font-weight: bold;
+        font-size: 1.2em;
+        border-radius: 12px;
+    }
+
+    /* Column headers with slight rounding */
+    .column-header {
+        background-color: #116416; /* dark green */
+        font-weight: bold;
+        border-radius: 8px 8px 0 0; /* only top corners rounded */
+    }
+
+    /* Alternating row colors for tbody */
+    .row-odd td {
+        background-color: #D8B17C; /* odd row color */
+    }
+
+    .row-even td {
+        background-color: #B1924A; /* even row color */
+    }
+
+</style>
+</head>
+<body>
+
+<h2>Exercise 8-1</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2" class="exercise-label">Exercise 8-1</th>
+        </tr>
+        <tr>
+            <th class="column-header">Album</th>
+            <th class="column-header">Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row-odd">
+            <td>Rubber Soul</td>
+            <td>1965</td>
+        </tr>
+        <tr class="row-even">
+            <td>Revolver</td>
+            <td>1966</td>
+        </tr>
+        <tr class="row-odd">
+            <td>Sgt. Pepper's</td>
+            <td>1967</td>
+        </tr>
+        <tr class="row-even">
+            <td>The White Album</td>
+            <td>1968</td>
+        </tr>
+        <tr class="row-odd">
+            <td>Abbey Road</td>
+            <td>1969</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Exercise 8-2</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="3" class="exercise-label">Exercise 8-2</th>
+        </tr>
+        <tr>
+            <th class="column-header">7:00pm</th>
+            <th class="column-header">7:30pm</th>
+            <th class="column-header">8:00pm</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row-odd">
+            <td colspan="3">The Sunday Night Movie</td>
+        </tr>
+        <tr class="row-even">
+            <td>Perry Mason</td>
+            <td>Candid Camera</td>
+            <td>What's My Line?</td>
+        </tr>
+        <tr class="row-odd">
+            <td>Bonanza</td>
+            <td colspan="2">The Wackiest Ship in the Army</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Exercise 8-3</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="3" class="exercise-label">Exercise 8-3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row-odd">
+            <td>Apples</td>
+            <td rowspan="2" class="row-even">Oranges</td>
+            <td>Pears</td>
+        </tr>
+        <tr class="row-even">
+            <td>Bananas</td>
+            <td>Pineapple</td>
+        </tr>
+        <tr class="row-odd">
+            <td colspan="3">Lychees</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

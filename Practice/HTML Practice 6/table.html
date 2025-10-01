@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Practice 6 - Class Schedule</title>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .center-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .table-caption {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #003300;
+        margin-bottom: 10px;
+    }
+
+    .table-container {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    table.centered {
+        margin: auto;
+        width: 700px;
+        border-collapse: separate;
+        border-spacing: 5px;
+    }
+
+    col.col-course {
+        background-color: #D3CDC6;
+        width: 25%;
+    }
+
+    col.col-days {
+        width: 15%;
+    }
+
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th.course-header {
+        background-color: #D3CDC6;
+    }
+
+    th.day-header {
+        background-color: #99FF66;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #FFFFFF;
+    }
+
+    .course-name {
+        background-color: #D3CDC6;
+        font-weight: bold;
+    }
+
+    /* Row heights proportional to class duration */
+    .time-block {
+        height: 60px; /* 1h 15min class */
+    }
+
+    .online-block {
+        height: 40px; /* shorter for online courses */
+    }
+
+</style>
+</head>
+<body>
+
+<div class="center-container">
+    <div class="table-caption">My Class Schedule</div>
+
+    <div class="table-container">
+        <table class="centered">
+            <colgroup>
+                <col class="col-course">
+                <col class="col-days" span="5">
+            </colgroup>
+
+            <tr>
+                <th class="course-header">Course</th>
+                <th class="day-header">Monday</th>
+                <th class="day-header">Tuesday</th>
+                <th class="day-header">Wednesday</th>
+                <th class="day-header">Thursday</th>
+                <th class="day-header">Friday</th>
+            </tr>
+
+            <tr class="time-block">
+                <td class="course-name">MGMT 3345</td>
+                <td>1:00 - 2:15</td>
+                <td></td>
+                <td>1:00 - 2:15</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="time-block">
+                <td class="course-name">INFO 2410</td>
+                <td></td>
+                <td>11:30 - 12:45</td>
+                <td></td>
+                <td>11:30 - 12:45</td>
+                <td></td>
+            </tr>
+
+            <tr class="online-block">
+                <td class="course-name">INFO 3130</td>
+                <td colspan="5">Online 24/7</td>
+            </tr>
+
+            <tr class="online-block">
+                <td class="course-name">IT 2600</td>
+                <td colspan="5">Online 24/7</td>
+            </tr>
+
+            <tr class="online-block">
+                <td class="course-name">INFO 2420</td>
+                <td colspan="5">Online 24/7</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+</body>
+</html>

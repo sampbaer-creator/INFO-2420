@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Color Design: Extreme Honeymoons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9F4EF;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .color-swatch {
+            width: 150px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: white; /* default for dark swatches */
+        }
+
+        .dark-blue { background-color: #38467B; }
+        .teal { background-color: #2B6A6D; }
+        .medium-blue { background-color: #335576; }
+        .green-accent { background-color: #34864D; }
+
+        /* Specific override for light background */
+        .color-swatch.light-bg {
+            background-color: #F9F4EF;
+            color: #2A2A2A;  /* dark text for readability */
+            border: 2px solid #2A2A2A;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extreme Honeymoons Color Palette</h1>
+    <p>These are the hexadecimal colors used for headings, text, accents, and background on the site.</p>
+
+    <div class="color-swatch dark-blue">#38467B</div>
+    <div class="color-swatch teal">#2B6A6D</div>
+    <div class="color-swatch medium-blue">#335576</div>
+    <div class="color-swatch green-accent">#34864D</div>
+    <div class="color-swatch light-bg">#F9F4EF</div>
+</body>
+</html>

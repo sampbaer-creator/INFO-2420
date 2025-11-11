@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* BODY - page background and font */
+body {
+    margin: 0;
+    background-image: url('Images/background.gif');
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+
+/* HEADER - top banner area */
+header {
+    width: 760px;
+    height: 150px;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: dashed medium navy;
+    margin: auto;
+}
+
+/* SECTION - main wrapper for nav and article */
+section {
+    width: 760px;
+    background-image: url('Images/inner_background.gif');
+    background-repeat: repeat-y;
+    overflow: hidden;
+    border-left: dashed medium navy;
+    border-right: dashed medium navy;
+    margin: auto;
+}
+
+/* NAV - left navigation column */
+nav {
+    float: left;
+    width: 110px;
+    padding-left: 10px;
+}
+
+/* ARTICLE - main content area */
+article {
+    float: left;
+    width: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* FOOTER - bottom area */
+footer {
+    text-align: center;
+    width: 760px;
+    height: 70px;
+    border: dashed medium navy;
+    background-color: #CCCCCC;
+    margin: auto;
+}
+
+/* LOGO - floats logo left in header */
+.logoleft {
+    float: left;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+/* NAVIGATION LINKS */
+nav a {
+    border: 2px inset #CCCCCC;
+    background-color: maroon;
+    line-height: 250%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    display: block; /* ensures each link is a button block */
+    margin-bottom: 5px; /* spacing between links */
+}
+
+nav a:hover {
+    color: yellow;
+    border: 2px outset #CCCCCC;
+}

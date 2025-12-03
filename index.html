@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <title>Samuel Baer Home Page</title>
 
-<style type="text/css">
+<style>
 /* Embed the Docktrin font */
 @font-face {
     font-family: 'Docktrin';
     src: url('fonts/Docktrin.ttf') format('truetype');
 }
 
-/* Body default */
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F9F4EF; /* light background */
-    color: #2A2A2A; /* default text */
+    background-color: #F9F4EF;
+    color: #2A2A2A;
     margin: 20px;
     line-height: 1.6;
 }
@@ -24,138 +24,115 @@ body {
 h1 {
     font-family: 'Docktrin', Arial, sans-serif;
     font-size: 48px;
-    color: #374B79; /* dark blue */
+    color: #374B79;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-family: 'Docktrin', Arial, sans-serif;
     font-size: 32px;
-    color: #307C5B; /* green accent */
+    color: #307C5B;
+    margin-top: 30px;
 }
 
-/* Links */
-a:link, a:visited {
-    color: #374B79; /* medium blue */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #86A941; /* light green accent */
-    text-decoration: underline;
-}
-
-/* Tables */
-table {
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-td {
-    padding: 10px 15px;
-}
-
-/* Horizontal rules */
+/* Horizontal rule */
 hr {
-    border: 2px solid #307C5B; /* green accent */
+    border: 2px solid #307C5B;
+    margin: 20px 0;
 }
 
-/* Optional: Paragraph text */
+/* Boxes for sections */
+.section-box {
+    background-color: #FFFFFF;
+    border: 2px solid #307C5B;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Tables as flex for responsive layout */
+.table-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.table-flex a {
+    display: inline-block;
+    background-color: #E8F0F2;
+    color: #374B79;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.table-flex a:hover {
+    background-color: #307C5B;
+    color: #FFFFFF;
+}
+
+/* Paragraph styling */
 p {
     font-size: 1em;
 }
 </style>
-
 </head>
 
 <body>
 <h1>Samuel Baer Home Page</h1>
 <hr />
 
+<div class="section-box">
 <h2>Projects</h2>
-<table cellpadding="15">
-<tr>
-    <td><a href="Projects/Project 1/INFO 2450 Project 1.htm">Project 1 - INFO 2450 Project 1</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project2/AboutUs.html">Project 2 - About Us: Extreme Honeymoons</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project2/Tributes.html">Project 2 - Tributes: Extreme Honeymoons</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project3/AboutUs.html">Project 3 - About Us: Extreme Honeymoons</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project3/Tributes.html">Project 3 - Tributes: Extreme Honeymoons</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project3/SiteDesign.html">Project 3 - SiteDesign</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project 4/AboutUs.html">Project 4 - About Us: Extreme Honeymoons</a></td>
-    <td>|</td>
-    <td><a href="Projects/Project 4/Tributes.html">Project 4 - Tributes: Extreme Honeymoons</a></td>
-     <td>|</td>
-     <td><a href="Projects/Project5/Graphics.html">Project5 - Graphics</a></td>
-     <td>|</td>
-     <td><a href="Projects/Project5/index.html">Project5 - index</a></td>
-     <td>|</td>
-     <td><a href="Projects/Project6/graphics-1.htm">Project6 - graphics-1</a></td>
-     <td>|</td>
-     <td><a href="Projects/Project6/SiteDesign.html">Project6 - SiteDesign</a></td>
-     <td>|</td>
-     <td><a href="Projects/Project7/Home.html">Project7  - Putting It All Together</a></td>
-     
+<div class="table-flex">
+    <a href="Projects/Project 1/INFO 2450 Project 1.htm">Project 1</a>
+    <a href="Projects/Project2/AboutUs.html">Project 2 - About Us</a>
+    <a href="Projects/Project2/Tributes.html">Project 2 - Tributes</a>
+    <a href="Projects/Project3/AboutUs.html">Project 3 - About Us</a>
+    <a href="Projects/Project3/Tributes.html">Project 3 - Tributes</a>
+    <a href="Projects/Project3/SiteDesign.html">Project 3 - SiteDesign</a>
+    <a href="Projects/Project 4/AboutUs.html">Project 4 - About Us</a>
+    <a href="Projects/Project 4/Tributes.html">Project 4 - Tributes</a>
+    <a href="Projects/Project5/Graphics.html">Project 5 - Graphics</a>
+    <a href="Projects/Project5/index.html">Project 5 - Index</a>
+    <a href="Projects/Project6/graphics-1.htm">Project 6 - Graphics-1</a>
+    <a href="Projects/Project6/SiteDesign.html">Project 6 - SiteDesign</a>
+    <a href="Projects/Project7/Home.html">Project 7 - Putting It Together</a>
+</div>
+</div>
 
-</tr>
-</table>
-<hr />
-
+<div class="section-box">
 <h2>Practice Assignments</h2>
-<table cellpadding="15">
-<tr>
-    <td><a href="Practice/HTML Practice 1/index.html">HTML Practice 1 - Index</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 2/cactus.html">HTML Practice 2 - Cactus</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 3/HTML3Files/index.html">HTML Practice 3 - Index</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 4A/index.html">HTML Practice 4A - Index</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 4B/CSS3Fonts/CSS3Fonts.html">HTML Practice 4B - CSS3Fonts</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 5/HTML 5/index.html">HTML Practice 5 - Index</a></td>
-    <td>|</td>
-    <td><a href="Practice/HTML Practice 6/table.html">HTML Practice 6 - table</table></a></td>
-    <td>|</td>
-    <td><a href="Practice/JavaSciptPractice/ImageSwap.htm">JavaSciptPractice - ImageSwap</table></a></td>
-    <td>|</td>
-    <td><a href="Practice/DW Practice1/work-with-html-text/rendered-index-start.html">DW Practice1 - index-start</table></a></td>
-    <td>|</td>
-    <td><a href="Practice/Practics7/Index.htm">Practics7 - index</table></a></td>
-	<td>|</td>
-    <td><a href="Practice/ImageMap/ImageExamples.html">ImageMap - Examples</table></a></td>
-	<td>|</td>
-    <td><a href="Practice/CountryCreations2/index.html">CountryCreations -index </table></a></td>
+<div class="table-flex">
+    <a href="Practice/HTML Practice 1/index.html">HTML Practice 1</a>
+    <a href="Practice/HTML Practice 2/cactus.html">HTML Practice 2</a>
+    <a href="Practice/HTML Practice 3/HTML3Files/index.html">HTML Practice 3</a>
+    <a href="Practice/HTML Practice 4A/index.html">HTML Practice 4A</a>
+    <a href="Practice/HTML Practice 4B/CSS3Fonts/CSS3Fonts.html">HTML Practice 4B</a>
+    <a href="Practice/HTML Practice 5/HTML 5/index.html">HTML Practice 5</a>
+    <a href="Practice/HTML Practice 6/table.html">HTML Practice 6</a>
+    <a href="Practice/JavaSciptPractice/ImageSwap.htm">JavaScript Practice</a>
+    <a href="Practice/DW Practice1/work-with-html-text/rendered-index-start.html">DW Practice1</a>
+    <a href="Practice/Practics7/Index.htm">Practice 7</a>
+    <a href="Practice/ImageMap/ImageExamples.html">ImageMap</a>
+    <a href="Practice/CountryCreations2/index.html">Country Creations</a>
+</div>
+</div>
 
-
-S
-
-</tr>
-</table>
-<hr />
-
+<div class="section-box">
 <h2>Book Assignments</h2>
-<table cellpadding="15">
-<tr>
-    <td><a href="Practice/Book Assignments/Black_Goose.html">Book Assignment 1 - Black Goose</a></td>
-    <td>|</td>
-    <td><a href="Practice/Book Assignments/Practice 3B/glossary.html">Book Assignment 2 - Glossary</a></td>
-    <td>|</td>
-    <td><a href="Practice/Book Assignments/HTML Practice 5B/Chap13/bistro.html">HTML Practice 5B - bistro</a></td>
-    <td>|</td>
-    <td><a href="Practice/Book Assignments/Practice 6A/Tables.html">Practice 6A - Tables</a></td>
-    <td>|</td>
-    <td><a href="Practice/Book Assignments/Flexbox/Excercise16-1/bakery_ch16.html"> Excercise16-1</a></td>
-    <td>|</td>
-    <td><a href="Practice/Book Assignments/Flexbox/Exercise16-2 & 3/flex-menu.html"> Exercise16-2 & 3</a></td>
-</tr>
-</table>
-<hr />
+<div class="table-flex">
+    <a href="Practice/Book Assignments/Black_Goose.html">Book Assignment 1</a>
+    <a href="Practice/Book Assignments/Practice 3B/glossary.html">Book Assignment 2</a>
+    <a href="Practice/Book Assignments/HTML Practice 5B/Chap13/bistro.html">HTML Practice 5B</a>
+    <a href="Practice/Book Assignments/Practice 6A/Tables.html">Practice 6A</a>
+    <a href="Practice/Book Assignments/Flexbox/Excercise16-1/bakery_ch16.html">Exercise 16-1</a>
+    <a href="Practice/Book Assignments/Flexbox/Exercise16-2 & 3/flex-menu.html">Exercise 16-2 & 3</a>
+</div>
+</div>
 
 </body>
 </html>

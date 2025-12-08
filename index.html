@@ -2,88 +2,109 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Samuel Baer Home Page</title>
+<title>Samuel Baer | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
-/* Embed the Docktrin font */
-@font-face {
-    font-family: 'Docktrin';
-    src: url('fonts/Docktrin.ttf') format('truetype');
-}
-
-/* Body styling */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F9F4EF;
-    color: #2A2A2A;
-    margin: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F4F4F9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
     line-height: 1.6;
 }
 
 /* Headings */
 h1 {
-    font-family: 'Docktrin', Arial, sans-serif;
-    font-size: 48px;
-    color: #374B79;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #1F3A93;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Docktrin', Arial, sans-serif;
-    font-size: 32px;
-    color: #307C5B;
-    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1F7A70;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1F7A70;
+    padding-bottom: 5px;
 }
 
-/* Horizontal rule */
-hr {
-    border: 2px solid #307C5B;
-    margin: 20px 0;
-}
-
-/* Boxes for sections */
+/* Section Boxes */
 .section-box {
-    background-color: #FFFFFF;
-    border: 2px solid #307C5B;
-    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
 }
 
-/* Tables as flex for responsive layout */
+.section-box:hover {
+    transform: translateY(-3px);
+}
+
+/* Link Grid */
 .table-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 .table-flex a {
+    flex: 1 1 150px;
     display: inline-block;
-    background-color: #E8F0F2;
-    color: #374B79;
-    padding: 10px 15px;
-    border-radius: 6px;
+    background-color: #EAF2F3;
+    color: #1F3A93;
+    padding: 12px 18px;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: 500;
+    text-align: center;
     transition: all 0.3s ease;
-    font-weight: bold;
 }
 
 .table-flex a:hover {
-    background-color: #307C5B;
-    color: #FFFFFF;
+    background-color: #1F7A70;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Paragraph styling */
+/* Paragraph Styling */
 p {
-    font-size: 1em;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table-flex {
+        flex-direction: column;
+    }
+
+    .table-flex a {
+        flex: 1 1 auto;
+    }
 }
 </style>
 </head>
 
 <body>
-<h1>Samuel Baer Home Page</h1>
-<hr />
+<h1>Samuel Baer Portfolio</h1>
 
 <div class="section-box">
 <h2>Projects</h2>
@@ -101,6 +122,7 @@ p {
     <a href="Projects/Project6/graphics-1.htm">Project 6 - Graphics-1</a>
     <a href="Projects/Project6/SiteDesign.html">Project 6 - SiteDesign</a>
     <a href="Projects/Project7/Home.html">Project 7 - Putting It Together</a>
+    <a href="Projects/Project8/Home.html">Project 8 - Final</a>
 </div>
 </div>
 

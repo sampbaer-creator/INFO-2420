@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Extreme Honeymoons: Home</title>
+    <!-- TemplateEndEditable -->
+    <link rel="stylesheet" href="../mystyles.css">
+    <script type="text/javascript" src="../myscripts.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body onload="preloadImages()">
+
+<div id="container">
+    <!-- Header with Logo, Banner, Navigation -->
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <a href="../Home.html">
+                <img src="../Images/Extreme_Logo.jpg" alt="Extreme Honeymoons Logo">
+            </a>S
+        </div>
+
+        <!-- Banner -->
+        <img id="banner" src="../Images/banner_extremehoneymoons.jpg" alt="Extreme Honeymoons Banner">
+
+        <!-- Navigation -->
+        <nav>
+            <a href="../Home.html">Home</a>
+            <a href="../AboutUs.html">About Us</a>
+            <a href="../Tributes.html">Tributes</a>
+            <a href="../Survey.html">Survey</a>
+            <a href="../FavLinks.html">Favorites</a>
+        </nav>
+    </header>
+
+    <!-- Main Section --><!-- TemplateBeginEditable name="PageContent" -->
+    <section>
+      <article>
+        <h1>Welcome to Extreme Honeymoons</h1>
+        <p> Looking for adventure, excitement, and romance all in one trip? 
+          Welcome to Extreme Honeymoons, where couples can experience unforgettable adventures that start 
+          your marriage off with pure adrenaline. Whether you’re heli-skiing, scuba diving, or mountain biking 
+          across the red rocks of Moab — we make your honeymoon one to remember. </p>
+        <h2>Adventure Photo Gallery</h2>
+        <p>Hover over the thumbnails below to view larger images of our featured honeymoon adventures.</p>
+        <!-- Thumbnail Gallery -->
+        <div id="gallery"> <img id="mainImage" src="../Images/Tributes/hunt1.jpg" alt="Adventure Fullsize" width="600" height="400"> <br>
+          <img src="../Images/Tributes/hunt1.jpg" alt="Cougar Hunt" onMouseOver="swapImage(0);"> <img src="../Images/Tributes/HeliSkiingSm.jpg" alt="Heli Skiing" onMouseOver="swapImage(1);"> <img src="../Images/Tributes/BikeCouple1Sm.jpg" alt="Mountain Biking" onMouseOver="swapImage(2);"> </div>
+        <h2>Mini-Tribute Highlight</h2>
+        <img src="../Images/Tributes/hunt3.jpg" alt="Couple Bow Hunting" class="float-right" width="250" height="167">
+        <p> Brian and Kitty Jones were just married last winter. They wanted a honeymoon that would test their limits 
+          and strengthen their bond — and Extreme Honeymoons delivered. Their weeklong cougar hunt in the Utah wilderness 
+          brought them closer than ever. <a href="../Tributes.html">more &gt;&gt;</a> </p>
+      </article>
+    </section>
+    <!-- TemplateEndEditable --><!-- Footer -->
+    <footer>
+        <p><a href="mailto:yourname@uvu.edu">Webmaster: yourname@uvu.edu</a></p>
+        <p>This web site has been created solely for educational purposes.</p>
+    </footer>
+</div>
+
+</body>
+</html>

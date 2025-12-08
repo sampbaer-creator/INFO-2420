@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extreme Honeymoons: Home</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script src="myscripts.js"></script>
+</head>
+<body onload="preloadImages()">
+
+<div id="container">
+
+    <header>
+        <div id="logo">
+            <a href="Home.html">
+                <img src="Images/Extreme_Logo.jpg" alt="Extreme Honeymoons Logo">
+            </a>
+        </div>
+        <img id="banner" src="Images/banner_extremehoneymoons.jpg" alt="Extreme Honeymoons Banner">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Tributes.html">Tributes</a>
+            <a href="Survey.html">Survey</a>
+            <a href="Links.html">Links</a>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h1>Welcome to Extreme Honeymoons</h1>
+            <p>Looking for adventure, excitement, and romance all in one trip? 
+                Welcome to Extreme Honeymoons, where couples can experience unforgettable adventures that start 
+                your marriage off with pure adrenaline.</p>
+
+            <h2>Adventure Photo Gallery</h2>
+            <p>Hover over the thumbnails below to view larger images.</p>
+
+            <div id="gallery">
+                <img id="mainImage" src="Images/Tributes/hunt1.jpg" alt="Adventure Fullsize" width="600" height="400">
+                <br>
+                <img src="Images/Tributes/hunt1.jpg" alt="Cougar Hunt" onmouseover="swapImage(0)">
+                <img src="Images/Tributes/HeliSkiingSm.jpg" alt="Heli Skiing" onmouseover="swapImage(1)">
+                <img src="Images/Tributes/BikeCouple1Sm.jpg" alt="Mountain Biking" onmouseover="swapImage(2)">
+            </div>
+
+            <h2>Mini-Tribute Highlight</h2>
+            <img src="Images/Tributes/hunt3.jpg" alt="Couple Bow Hunting" class="float-right" width="250" height="167">
+            <p>
+                Brian and Kitty Jones were just married last winter. Their weeklong cougar hunt in the Utah wilderness brought them closer than ever.
+                <a href="Tributes.html">more &gt;&gt;</a>
+            </p>
+
+            <button onclick="window.print()">Print Page</button>
+
+        </article>
+    </section>
+
+    <footer>
+        <p><a href="mailto:yourname@uvu.edu">Webmaster: yourname@uvu.edu</a></p>
+        <p>This web site has been created solely for educational purposes.</p>
+    </footer>
+
+</div>
+</body>
+</html>
+
